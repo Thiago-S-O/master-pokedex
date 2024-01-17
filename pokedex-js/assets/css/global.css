@@ -1,0 +1,47 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+h1 {
+    color: rgb(39, 0, 0);
+}
+/* rem, se ajusta conforme o tamanho da tela. padding: dista do canto direito da tela */
+.content {
+    width: 100vw;
+    padding: 1rem;
+    background-color: white;
+    height: 100vh;
+}
+
+@media screen and (min-width: 992px){
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button{
+    margin: .25rem 0;
+    font-size: .750rem;
+    padding: .25rem .5rem;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 1rem;
+}
